@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Divya – My Forever Love ❤️</title>
+    <meta name="description" content="A digital love letter and birthday celebration for Divya, my future wife. Can't wait to spend forever with you.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lora:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Reset & Global Styles */
+        :root {
+            --color-primary-rose: #d63384; /* Deep Rose */
+            --color-secondary-blush: #ffc0cb; /* Blush */
+            --color-light-text: #555; /* Light Gray for body text */
+            --color-white-transparent: rgba(255, 255, 255, 0.9);
+            --font-title: 'Dancing Script', cursive;
+            --font-body: 'Lora', serif;
+            --border-radius-lg: 20px;
+            --box-shadow-subtle: 0 8px 16px rgba(0,0,0,0.1);
+            --transition-speed: 0.4s ease-in-out;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Pink-to-purple dreamy gradient background */
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #d299c2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            color: var(--color-light-text);
+            font-family: var(--font-body);
+            overflow-x: hidden;
+            
+            /* Page fade-in slide-up effect */
+            animation: pageFadeIn 2s ease forwards;
+            opacity: 0;
+            transform: translateY(20px);
+            position: relative;
+        }
+
+        @keyframes pageFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- Header / Hero Section --- */
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero-title {
+            font-family: var(--font-title);
+            font-size: 4rem;
+            color: var(--color-primary-rose);
+            text-shadow: 2px 2px 4px #ff69b4;
+            margin-bottom: 15px;
+            line-height: 1.1;
+            
+            /* Pulsing animation */
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+
+        .personal-message {
+            font-family: var(--font-body);
+            font-style: italic;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            padding: 0 10px;
+            color: #333;
+            
+            /* Fade-in on load */
+            opacity: 0;
+            animation: fadeIn 2s 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        /* --- Photo Section --- */
+        .photo-container {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto 40px;
+            border-radius: 50%;
+            border: 8px solid var(--color-primary-rose);
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+            overflow: hidden;
+            
+            /* Gentle rotate animation */
+            animation: gentleRotate 20s linear infinite;
+            transition: transform var(--transition-speed);
+        }
+
+        .photo-container:hover {
+            animation-play-state: paused;
+            transform: scale(1.05);
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        @keyframes gentleRotate {
+            to { transform: rotate(360deg); }
+        }
+
+        /* --- Slideshow / Carousel Section (Existing CSS) --- */
+        .slideshow-container {
+            position: relative; max-width: 800px; width: 100%; margin: 0 auto 40px; background-color: var(--color-white-transparent); border-radius: var(--border-radius-lg); box-shadow: var(--box-shadow-subtle); padding: 40px; overflow: hidden; min-height: 350px;
+        }
+        .slide {
+            display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: inherit; height: 100%; background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(255, 192, 203, 0.5)); border-radius: var(--border-radius-lg); padding: 20px;
+        }
+        .slide h2 { font-family: var(--font-title); font-size: 2.5rem; color: var(--color-primary-rose); margin-bottom: 15px; line-height: 1.2; }
+        .slide p { font-family: var(--font-body); font-style: italic; font-size: 1.3rem; line-height: 1.6; color: #333; max-width: 90%; margin: 0; }
+        .prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 20px; transition: var(--transition-speed); border-radius: 0 3px 3px 0; user-select: none; background-color: rgba(214, 51, 132, 0.5); z-index: 10; height: 48px; }
+        .next { right: 0; border-radius: 3px 0 0 3px; }
+        .prev:hover, .next:hover { background-color: rgba(214, 51, 132, 0.8); }
+        .dot-container { text-align: center; padding: 10px 0; }
+        .dot { cursor: pointer; height: 15px; width: 15px; margin: 0 4px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color var(--transition-speed), transform 0.2s; touch-action: manipulation; }
+        .dot:hover, .active-dot { background-color: var(--color-primary-rose); transform: scale(1.1); }
+        
+        /* --- Buttons --- */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        .action-button {
+            padding: 15px 30px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+            background-color: var(--color-primary-rose);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: background-color 0.3s, transform 0.1s;
+            min-height: 48px;
+            text-decoration: none;
+        }
+
+        .action-button:hover, .action-button:focus {
+            background-color: #b72b71;
+            transform: translateY(-2px);
+        }
+
+        /* --- Hidden Sections (Letter & Surprise) --- */
+        #letter-section, #surprise-section {
+            background-color: var(--color-white-transparent);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow-subtle);
+            padding: 40px;
+            max-width: 700px;
+            width: 100%;
+            margin: 40px auto 60px;
+            text-align: left;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease, max-height 1s ease; 
+            display: none; 
+            max-height: 0; 
+            overflow: hidden;
+            
+        }
+        #surprise-section { max-width: 500px; text-align: center; }
+
+        .visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+            display: block !important; 
+            /* Max-height set high to ensure long content (like the letter) is fully visible */
+            max-height: 9999px !important; 
+        }
+
+        /* Heading and paragraph styles for hidden sections (Existing CSS) */
+        #letter-section h2, #surprise-section h2 {
+            font-family: var(--font-title); font-size: 3rem; color: var(--color-primary-rose); text-align: center; margin-bottom: 30px; text-shadow: 1px 1px 3px #ff69b4;
+        }
+        #surprise-section h2 { font-size: 2.5rem; }
+        #letter-section p, #surprise-section p {
+            font-family: var(--font-body); font-size: 1.2rem; line-height: 1.8; color: #333; margin-bottom: 20px; white-space: pre-wrap;
+        }
+        #letter-section .signature {
+            font-family: var(--font-title); font-size: 2rem; color: var(--color-primary-rose); text-align: right; margin-top: 30px; display: block;
+        }
+        
+        /* --- Footer --- */
+        footer {
+            margin-top: auto;
+            text-align: center;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #777;
+            padding: 10px;
+            width: 100%;
+            z-index: 1;
+            position: relative;
+        }
+
+        /* --- Confetti Animation Overlay (Existing CSS) --- */
+        .confetti-container {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; overflow: hidden; z-index: 9999;
+        }
+
+        /* --- Heart Background Animation (FALLING HEARTS) --- */
+        .heart-container {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            pointer-events: none; 
+            overflow: hidden; 
+            z-index: 0;
+        }
+
+        .heart {
+            position: absolute; 
+            top: -50px; 
+            font-size: 2rem; 
+            opacity: 0; 
+            /* Animation duration is randomized between 5s and 12s in JS */
+            animation: fallHeart var(--heart-duration) linear forwards infinite; 
+        }
+
+        @keyframes fallHeart {
+            0% { 
+                transform: translate(0, 0) scale(0); 
+                opacity: 0; 
+            }
+            10% { 
+                opacity: 0.8; 
+                transform: translate(0, 10vh) scale(1); 
+            }
+            80% { 
+                opacity: 0.8; 
+            }
+            100% { 
+                /* Falls down the entire viewport height */
+                transform: translate(var(--heart-end-x), 100vh) scale(1.2); 
+                opacity: 0; 
+            }
+        }
+
+
+        /* --- MEDIA QUERIES (Existing CSS) --- */
+        @media (max-width: 768px) {
+            .hero-title { font-size: 3rem; }
+            .personal-message { font-size: 1.2rem; }
+            .photo-container { width: 150px; height: 150px; }
+            .slideshow-container { padding: 20px; min-height: 250px; }
+            .slide h2 { font-size: 2rem; }
+            .slide p { font-size: 1.1rem; }
+            .prev, .next { font-size: 18px; padding: 12px; height: 40px; }
+            .action-button { font-size: 1.1rem; padding: 12px 25px; width: 80%; }
+            #letter-section, #surprise-section { padding: 30px; }
+            #letter-section h2 { font-size: 2.5rem; }
+            #surprise-section h2 { font-size: 2rem; }
+            #letter-section p, #surprise-section p { font-size: 1.1rem; }
+            #letter-section .signature { font-size: 1.8rem; }
+        }
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+            .hero-title { font-size: 2rem; margin-bottom: 10px; }
+            .personal-message { font-size: 1rem; margin-bottom: 20px; }
+            .photo-container { width: 120px; height: 120px; margin-bottom: 30px; }
+            .slideshow-container { padding: 15px; min-height: 200px; }
+            .slide h2 { font-size: 1.5rem; margin-bottom: 10px; }
+            .slide p { font-size: 1rem; }
+            .prev, .next { font-size: 16px; padding: 10px; height: 35px; }
+            .button-group { flex-direction: column; align-items: center; }
+            .action-button { width: 100%; max-width: 300px; }
+            #letter-section, #surprise-section { padding: 20px; }
+            #letter-section h2 { font-size: 2rem; }
+            #surprise-section h2 { font-size: 1.8rem; }
+            #letter-section p, #surprise-section p { font-size: 1rem; }
+            #letter-section .signature { font-size: 1.5rem; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="confetti-container" id="confetti-container"></div>
+    <div class="heart-container" id="heart-container"></div> 
+    
+    <header class="hero">
+        <h1 class="hero-title">Happy Birthday, My Dear Future Wife! 🎉💕 Divya</h1>
+    </header>
+
+    <p class="personal-message" id="message">
+        To the love of my life, the keeper of my heart, and my greatest adventure. Every moment with you feels like a dream I never want to wake from. Can't wait for the day I finally get to call you my **Wife**. I love you more than words can say. Happy Birthday! ❤️
+    </p>
+    
+    <div class="photo-container">
+        <img src="https://lh3.googleusercontent.com/d/1yNXjDuREbt2xZE9_ikFQonHXUjpp4_4J=s220?authuser=0" 
+             alt="A high-quality photo of Divya, the future wife.">
+    </div>
+
+    <section class="slideshow-container" id="slideshow">
+        
+        <div class="slide-content">
+            
+            <div class="slide" data-slide-index="0">
+                <h2>Eternal Love 🌹</h2>
+                <p>I want to spend my whole life with you, going on adventures, hugging you every day, and loving you more and more. You are my everything.</p>
+            </div>
+            
+            <div class="slide" data-slide-index="1">
+                <h2>Wedding Dreams 💍</h2>
+                <p>Just one more week and you will be my wife.
+I will hold your hand, kiss you, and promise to love you every day for the rest of my life.
+I will see you walk to me, we will smile, cry happy tears, and become husband and wife.
+I can’t wait to call you my wife.</p>
+            </div>
+            
+            <div class="slide" data-slide-index="2">
+                <h2>Joyful Moments ✨</h2>
+                <p>You make me smile like no one else. Every second with you feels like magic. Today, tomorrow, and always let’s fill our life with happy moments together.</p>
+            </div>
+            
+            <div class="slide" data-slide-index="3">
+                <h2>Sweet Promise 🎂</h2>
+                <p>You are never alone. I am with you now, I was with you then, and I will be with you forever. I will never leave your side. My love, my wife, my everything. This is my promise to you forever.</p>
+            </div>
+            
+            <div class="slide" data-slide-index="4">
+                <h2>Forever Yours 💖</h2>
+                <p>Happy Birthday, my love, my future wife, my everything.
+Today is your day, but every day belongs to us.
+I love you more than words can say.
+Forever yours.</p>
+            </div>
+            
+        </div>
+        
+        <a class="prev" aria-label="Previous slide">❮</a>
+        <a class="next" aria-label="Next slide">❯</a>
+    </section>
+
+    <div class="dot-container" id="dot-container">
+    </div>
+
+    <div class="button-group">
+        <button class="action-button" onclick="toggleLetter()">Open My Letter to You 💌</button>
+        <button class="action-button" onclick="toggleSurprise()">Click for a Surprise! 🎁</button> 
+    </div>
+
+    <section id="letter-section">
+        <h2>My Dearest Divya,</h2>
+        <p>
+            Happy Birthday My dear madam, bada, my future wife and fiancé 🥳
+
+Wish you a very happy birthday, I hope this year brings you lots of happiness, peace, and success, and yes, ek new beginning of our life, our marriage ❤️.
+            
+          I am very bad at expressing my feelings, mala khulun bolayla jamat nahi je mazya manat aahe te sangayla, kahi vel shabd kami padtat, kahi vel direction ch nahi milt kas sangaycha, so mi vicharla ek letter lihaycha, ho thoda old fashion aahe, and tu manshil, aajkal kon letter lihit in this GenZ generation, WhatsApp and Insta aahet na 😅, pan mi thoda old-school aahe re, technically GenZ ch aahe mi pan, pan thoughts thode vegde aahet, kadhi kadhi vatat ki mi ya generation madhe fit hot nahi, maybe due to my environment I have some old-school thoughts.
+            
+          We have different opinions and thoughts about many things, kadi kadi jagde pan hotat, but we can solve this by just "agreeing to disagree", yes we don’t have the same opinion, we can have different likes and dislikes, and this makes us unique and different from each other, jar saglya goshti same aslya tar life khup boring hoil re, ani kahi gosti mi mala shikv, kahi gosti mi tula shikvel, and this is how we will grow and make our relationship stronger.
+            
+          Mala ajun hi lakshat aahe jeva pahilyanda aalo hoto tujhya ghari, tu green saree madhe hotis, orange juice gheun aali hotis 😅, and mi mhantlo, photo madhe dusri koni hoti re, pan jeva tu bolayla laglis, tya ek line ne, "first bhetit koni khar bolt ka", teva mala vatla ki tu kharach real aahe, in this fake world genuineness milna rare aahe, ani tya divshi aapan boln jal, tu padar nit karun halkisi lajun jeva majay bajula basli sofa var, I still remember those moments.
+            
+          Then we met on engagement, and sarvat addi la tu mhantli, "Non veg khata ka ?"😅, mi tevha seriously vichar kart hoto quit karaycha, but then I realised, aata tar possible ch nahi, ata tar suruch theva v lage karan tula khul avadt, and now I also can eat non-veg guilt-free.
+
+Then photo shoot, J1, video calls with your friends, tu mazya tatatlit jelyabi khayla geli hotis, he sagla ajun hi fresh aahe mazya head madhe.
+            
+          Pudhe phone var bolayla laglo, pan kahi off vatayla lagl, ani I tried to confront you, Insta varche photos baghitlya var mi thoda over react kela, harsh pan bollo, and also we had our first fight, tya 10 divas aapan bolo n hotlo, mala vatla sagla samplyasarkha and it won’t work out, pan teva fakt 10-15 divas jale hote and I realized ki mi jast react kela, mi jya goshti dusryana sangaycho ki, "don’t compare your life with others", ti mi swata visarlo hoto.
+            
+          Pudhe thod thod bolayla laglo, teva realize jhala ki kahi gosti common aahet aaplya madhe, ani kahi goshti veglya pan aahet, pan tyamulech life interesting bananar aahe, tyamule mala feel jhala ki ho, this decision is correct, and life would be really good with you.
+          Then after that I had a phase of job change, jeva maza job ka issue zala hota, and mala kadat n hot kay karav kay nahi, and tu call kela and mala kadat n hot kas bolu, kas samjhau, pan tu mhantli, "chill chill chill, it’s okay, je jala te jau de, atta Hexaware join karun gya or try somewhere else", tuza calm tone, tuza support, to khup important hota teva, ani yech aapan expect karto from a partner, support in tough times, and I know tu asach sobt rahashil in future as well.
+            
+          I always overthink, but tu always was saying, chill, go with the flow, everything will be okay.
+
+And then last month je kahi jal, pan tuza trust, tuza silence, sagla bolla, tu trust break nahi kela, aani tyamule maza tujhya varcha vishwas double jhala.
+            
+          Pan ho, je zhala te visarna easy nahi, kahi questions aahet ajun hi, and why this things are happening after this much tries, what will happen I don’t know, pan mala khatri aahe ki time barobar sagla clear hoil.
+
+Mi nehemi manto, jo hota hai ache ke liye hota hai, kadhi kadhi God cha plan samjhat nahi, pan tyacha plan best asto, kadhachit aaplya sathi pan tyacha kahi plan asel, and God has seen something which we have not.
+            
+          And one thing mi realize keli, don’t know je kahi jal ka jal, aapan past change karu shakt nahi, we can only control present, and hence present changla karaycha, aaj changla banvla tar kal aapohap sundar banel.
+
+Ani honestly, ya saglya time madhe mala ek gost kalali, I really like you, tuza sobat life imagine karun mala peace milta, we will have our own house, small family, simple life, lots of laughs, hech pahije mala.
+
+And ya, I love you ❤️, tula ata reply denyachi garaj nahi, jeva tula vatel, tevha sang, mi vat baghtoy, without expecting, just hoping......
+
+I am with you and will be with you, and forever is not myth ❤️
+        </p>
+        <span class="signature">— With all my love, Your Future Husband</span>
+    </section>
+    
+    <section id="surprise-section">
+        <h2>A Little Extra Magic! ✨</h2>
+        <p style="font-size: 1.5rem; margin-top: 10px;">
+            Hopefully, you got my surprise, and hopefully, you liked it!
+        </p>
+        <p style="font-style: italic; margin-top: 20px;">
+            The gifts are real, just like my love for you. Enjoy your special day!
+        </p>
+        <span class="signature">😘</span>
+    </section>
+
+    <footer>
+        Made with ❤️ for Divya – 2025
+    </footer>
+    
+    <script>
+        const slideshow = document.getElementById('slideshow');
+        const slides = document.getElementsByClassName('slide');
+        const dotsContainer = document.getElementById('dot-container');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        const confettiContainer = document.getElementById('confetti-container');
+        const heartContainer = document.getElementById('heart-container');
+        const letterSection = document.getElementById('letter-section');
+        const surpriseSection = document.getElementById('surprise-section');
+        
+        let slideIndex = 0;
+        let slideInterval;
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const SWIPE_THRESHOLD = 50;
+
+        // --- Slideshow Logic (Unchanged) ---
+        function generateDots() {
+            for (let i = 0; i < slides.length; i++) {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+                dot.onclick = () => currentSlide(i);
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function showSlide(n) {
+            const dots = document.getElementsByClassName('dot');
+
+            if (n >= slides.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 1 }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+                dots[i].className = dots[i].className.replace(' active-dot', '');
+            }
+
+            slides[slideIndex].style.display = 'flex';
+            dots[slideIndex].className += ' active-dot';
+            
+            slides[slideIndex].style.opacity = 0;
+            requestAnimationFrame(() => {
+                slides[slideIndex].style.transition = 'opacity 0.6s ease';
+                slides[slideIndex].style.opacity = 1;
+            });
+        }
+        
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlide(slideIndex);
+            resetAutoAdvance();
+        }
+
+        function currentSlide(n) {
+            slideIndex = n;
+            showSlide(slideIndex);
+            resetAutoAdvance();
+        }
+
+        function startAutoAdvance() {
+            slideInterval = setInterval(() => {
+                changeSlide(1);
+                burstConfetti(10);
+            }, 4000);
+        }
+
+        function pauseAutoAdvance() {
+            clearInterval(slideInterval);
+        }
+
+        function resetAutoAdvance() {
+            pauseAutoAdvance();
+            startAutoAdvance();
+        }
+        
+        function handleSwipeGesture() {
+            const deltaX = touchEndX - touchStartX;
+            if (deltaX > SWIPE_THRESHOLD) {
+                changeSlide(-1);
+            } else if (deltaX < -SWIPE_THRESHOLD) {
+                changeSlide(1);
+            }
+        }
+        
+        // --- Confetti Logic (Unchanged) ---
+        const emojis = ['❤️', '💖', '🎉', '✨', '💍'];
+        const colors = ['#ff69b4', '#d63384', '#ffc0cb', '#fecfef'];
+
+        function createConfettiPiece() {
+            const piece = document.createElement('div');
+            piece.className = 'confetti';
+            piece.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+            
+            const size = Math.random() * 20 + 10;
+            piece.style.fontSize = `${size}px`;
+            piece.style.color = colors[Math.floor(Math.random() * colors.length)];
+            
+            const startX = Math.random() * 100;
+            piece.style.left = `${startX}vw`;
+            piece.style.top = `-20px`;
+
+            const duration = Math.random() * 3 + 2;
+            const delay = Math.random() * 0.5;
+            
+            const style = document.createElement('style');
+            style.type = 'text/css';
+            const fallRotateKeyframes = `@keyframes fallRotate-${startX} { 
+                0% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 1; }
+                100% { transform: translate3d(${(Math.random() - 0.5) * 200}px, 100vh, 0) rotate(${Math.random() * 360 * 5}deg); opacity: 0; }
+            }`;
+            style.innerHTML = fallRotateKeyframes;
+            document.head.appendChild(style);
+
+            piece.style.animation = `fallRotate-${startX} ${duration}s linear ${delay}s forwards`;
+            
+            confettiContainer.appendChild(piece);
+            
+            setTimeout(() => {
+                piece.remove();
+                style.remove();
+            }, (duration + delay) * 1000);
+        }
+
+        function burstConfetti(count) {
+            for (let i = 0; i < count; i++) {
+                createConfettiPiece();
+            }
+        }
+
+        const confettiStyle = document.createElement('style');
+        confettiStyle.innerHTML = `.confetti {
+            position: absolute;
+            pointer-events: none;
+            line-height: 1;
+        }`;
+        document.head.appendChild(confettiStyle);
+
+        let confettiInterval;
+        function startConfettiShow() {
+            burstConfetti(50);
+            confettiInterval = setInterval(() => burstConfetti(20), 5000);
+        }
+
+        // --- HEART BACKGROUND ANIMATION LOGIC (FALLING HEARTS) ---
+        const heartEmojis = ['❤️', '💖', '💕'];
+        function createHeart() {
+            const heart = document.createElement('span');
+            heart.className = 'heart';
+            heart.innerHTML = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+            
+            const startX = Math.random() * 100;
+            heart.style.left = `${startX}vw`;
+            heart.style.fontSize = `${Math.random() * 1.5 + 1}rem`;
+            // Animation duration is kept between 5s and 12s for a slow, gentle fall
+            const duration = Math.random() * 7 + 5; 
+            heart.style.setProperty('--heart-duration', `${duration}s`);
+
+            // Random delay between 0 and 5 seconds
+            heart.style.animationDelay = `${Math.random() * 5}s`;
+
+            const endXOffset = (Math.random() - 0.5) * 40;
+            heart.style.setProperty('--heart-end-x', `${endXOffset}vw`);
+
+            heartContainer.appendChild(heart);
+
+            // Remove heart after animation finishes
+            heart.addEventListener('animationend', () => {
+                heart.remove();
+            });
+        }
+
+        function startHeartAnimation() {
+            // *** UPDATED: Increased interval to 4000ms (4 seconds) to ensure only 1-3 hearts 
+            // are visible at any given time, maintaining a sparse, steady stream. ***
+            setInterval(createHeart, 4000); 
+        }
+
+        // --- Toggle Logic (Unchanged) ---
+        function toggleSection(sectionElement) {
+            // Close the other section if it's open
+            if (sectionElement === letterSection && surpriseSection.classList.contains('visible')) {
+                toggleSurprise(); 
+            } else if (sectionElement === surpriseSection && letterSection.classList.contains('visible')) {
+                toggleLetter();
+            }
+
+            if (sectionElement.classList.contains('visible')) {
+                sectionElement.classList.remove('visible');
+            } else {
+                sectionElement.classList.add('visible');
+                // Scroll to the new section
+                sectionElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        function toggleLetter() {
+            toggleSection(letterSection);
+        }
+        
+        function toggleSurprise() {
+            toggleSection(surpriseSection);
+            if (surpriseSection.classList.contains('visible')) {
+                 burstConfetti(100); 
+            }
+        }
+        
+        // --- Initialization ---
+        window.onload = () => {
+            generateDots();
+            showSlide(slideIndex);
+            startAutoAdvance();
+            startConfettiShow();
+            startHeartAnimation();
+
+            // Set up event listeners for slide control
+            prevBtn.addEventListener('click', () => changeSlide(-1));
+            nextBtn.addEventListener('click', () => changeSlide(1));
+            slideshow.addEventListener('mouseenter', pauseAutoAdvance);
+            slideshow.addEventListener('mouseleave', resetAutoAdvance);
+            slideshow.addEventListener('touchstart', e => { 
+                touchStartX = e.changedTouches[0].screenX; pauseAutoAdvance(); 
+            }, { passive: true });
+            slideshow.addEventListener('touchend', e => { 
+                touchEndX = e.changedTouches[0].screenX; handleSwipeGesture(); resetAutoAdvance(); 
+            }, { passive: true });
+            
+            // Update footer year dynamically
+            document.querySelector('footer').innerHTML = `Made with ❤️ for Divya – ${new Date().getFullYear()}`;
+        };
+
+    </script>
+
+</body>
+</html>
